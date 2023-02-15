@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-component{
+    height: 100vh;
+}
+.main-component img{
+    height: 100%;
+    width: 100%;
+}
+.logo-container{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.logo-container .logo{
+    width: 150px;
+    height: 150px;
+}
+
+.score-component{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.score-component .score-img{
+
+    width: 50px;
+    height: 20px;
+}
+
+.score-component span{
+    font-family: 'Iceberg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    /* line-height: 73px; */
+    /* text-align: center; */
+    /* letter-spacing: -0.005em; */
+    color: #FFFF00;
+
+}
+
+.game-component{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    gap:30px;
+    left: 0;
+    justify-content: center;
+    bottom: 0;
+}
+
+.box{
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    animation: slideUp 10s ease 1;
+}
+.box img{
+    width: 100%;
+}
+
+@keyframes slideUp{
+    0%,100%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-500px);
+    }
+}
+
+.component-1{
+    animation-delay: 5s;
+}
+.component-2{
+    animation-delay: 0s;
+}
+.component-3{
+    animation-delay: 10s;
+}
+
+.after-knife-img{
+    transition: all 5s;
+}
+
+.slide-down {
+    /* transition: transform 5s; */
+    transform: translateY(0);
+}
